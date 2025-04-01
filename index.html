@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Sistema de Funcionários</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Funcionários</h1>
+
+  <form id="form-funcionario">
+    <label>Nome: <input type="text" id="nome" required></label><br><br>
+    <label>Idade: <input type="number" id="idade" required></label><br><br>
+    <label>Cargo: <input type="text" id="cargo" required></label><br><br>
+    <label>Salário: <input type="number" id="salario" required></label><br><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Lista de Funcionários</h2>
+  <table id="tabela-funcionarios">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Cargo</th>
+        <th>Salário</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
